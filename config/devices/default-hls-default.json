@@ -1,0 +1,169 @@
+{
+	"pageStrategy": "html5",
+	"modules": {
+		"base": "antie/devices/browserdevice",
+		"modifiers": [
+		"antie/devices/anim/css3",
+		"antie/devices/media/html5hls",
+		"antie/devices/mediaplayer/html5",
+		"antie/devices/mediaplayer/live/none",
+		"antie/devices/net/default",
+		"antie/devices/data/nativejson",
+		"antie/devices/storage/cookie",
+		"antie/devices/logging/xhr",
+		"antie/devices/exit/closewindow",
+		"antie/devices/parentalguidance/appdefaultpghandler"
+			]
+	},
+	"logging": {
+		"level": "error",
+		"strategy":"xhr"
+	},
+	"streaming": {
+		"video": {
+			"mediaURIFormat": "%href%",
+			"supported": [
+			{
+				"protocols": [
+					"http"
+					],
+				"encodings": [
+					"h264"
+					],
+				"transferFormat": [
+					"hls",
+				"plain"
+					],
+				"maximumBitRate": 3600,
+				"maximumVideoLines": 1080
+			}
+			]
+		},
+		"audio": {
+			"mediaURIFormat": "%href%",
+			"supported": [
+			{
+				"protocols": [
+					"http"
+					],
+				"encodings": [
+					"aac"
+					],
+				"maximumBitRate": 192
+			}
+			]
+		}
+	},
+	"input": {
+		"map": {
+			"13": "ENTER",
+			"32": "PLAY",
+			"37": "LEFT",
+			"38": "UP",
+			"39": "RIGHT",
+			"40": "DOWN",
+			"19": "PLAY_PAUSE",
+			"115": "STOP",
+			"27": "BACK",
+			"8": "BACK_SPACE",
+			"65": "A",
+			"66": "B",
+			"67": "C",
+			"68": "D",
+			"69": "E",
+			"70": "F",
+			"71": "G",
+			"72": "H",
+			"73": "I",
+			"74": "J",
+			"75": "K",
+			"76": "L",
+			"77": "M",
+			"78": "N",
+			"79": "O",
+			"80": "P",
+			"81": "Q",
+			"82": "R",
+			"83": "S",
+			"84": "T",
+			"85": "U",
+			"86": "V",
+			"87": "W",
+			"88": "X",
+			"89": "Y",
+			"90": "Z",
+			"48": "0",
+			"49": "1",
+			"50": "2",
+			"51": "3",
+			"52": "4",
+			"53": "5",
+			"54": "6",
+			"55": "7",
+			"56": "8",
+			"57": "9",
+            "46": ".",
+            "64": "@"
+		}
+	},
+	"accessibility": {
+		"captions": {
+			"supported": [
+				"application/ttaf+xml"
+				]
+		}
+	},
+	"layouts": [
+	{
+		"width": 800,
+		"height": 450,
+		"module": "%application%/appui/layouts/450p",
+		"classes": [
+			"browserdevice540p"
+			]
+	},
+	{
+		"width": 960,
+		"height": 540,
+		"module": "%application%/appui/layouts/540p",
+		"classes": [
+			"browserdevice540p"
+			]
+	},
+	{
+		"width": 1280,
+		"height": 720,
+		"module": "%application%/appui/layouts/720p",
+		"classes": [
+			"browserdevice720p"
+			]
+	},
+	{
+		"width": 1920,
+		"height": 1080,
+		"module": "%application%/appui/layouts/1080p",
+		"classes": [
+			"browserdevice1080p"
+			]
+	},
+	{
+		"width": 2560,
+		"height": 1440,
+		"module": "%application%/appui/layouts/1440p",
+		"classes": [
+			"browserdevice1440p"
+			]
+	},
+	{
+		"width": 3840,
+		"height": 2160,
+		"module": "%application%/appui/layouts/2160p",
+		"classes": [
+			"browserdevice2160p"
+			]
+	}
+	],
+		"networking": {
+			"supportsJSONP": true
+		}
+}
